@@ -11,3 +11,15 @@ def countdown_bottles(num_bottles):
     
 print("No more bottles of beer on the wall. Time to buy more beer!")
 
+def main():
+    try:
+        bottles = int(input("Enter number of bottles: "))
+        if bottles < 0:
+            print("Please enter a positive number.")
+        else:
+            countdown_bottles(bottles)
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+
+if __name__ == "__main__":
+    main()
