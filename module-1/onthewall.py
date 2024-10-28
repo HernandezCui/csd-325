@@ -9,3 +9,5 @@ def countdown_bottles(num_bottles):
             num_bottles -= 1
             print("Take one down and pass it around, no more bottles of beer on the wall.\n")
     
+print("No more bottles of beer on the wall. Time to buy more beer!")
+
