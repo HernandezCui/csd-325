@@ -1,5 +1,3 @@
-# city_functions.py
-
 def city_country(city, country):
     """Return a city and country in the format 'City, Country'."""
     return f"{city.title()}, {country.title()}"
