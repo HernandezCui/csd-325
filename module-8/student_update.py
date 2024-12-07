@@ -17,7 +17,7 @@ def save_students(filename, students):
         json.dump(students, file, indent=4)
 
 def main():
-    filename = 'student.json'  # Ensure this file is in the same directory as your Python script
+    filename = 'student.json' 
     
     # Load the original student list
     students = load_students(filename)
@@ -30,8 +30,8 @@ def main():
     new_student = {
         'F_Name': 'John',
         'L_Name': 'Doe',
-        'Student_ID': 99999,  # Your fictional ID
-        'Email': 'johndoe@example.com'  # Your email
+        'Student_ID': 99999,  
+        'Email': 'johndoe@example.com'  
     }
     students.append(new_student)
     
