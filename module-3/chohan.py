@@ -82,3 +82,6 @@ while True:  # Main game loop.
         print('You have run out of money!')
         print('Thanks for playing!')
         sys.exit()
+
+
+    ##Cuitlahuac Hernandez 
