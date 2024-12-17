@@ -19,8 +19,8 @@ class Todo(tk.Tk):
 
         self.tasks_canvas.configure(yscrollcommand=self.scrollbar.set)
 
-        # Changed window title to my last name
-        self.title("Hernandez-ToDo")
+        # Change window title to your last name
+        self.title("Sampson-ToDo")
         self.geometry("300x400")
 
         # Add a menu with an Exit option
@@ -41,7 +41,7 @@ class Todo(tk.Tk):
         self.text_frame.pack(side=tk.BOTTOM, fill=tk.X)
         self.task_create.focus_set()
 
-        todo1 = tk.Label(self.tasks_frame, text="--- Add Items Here ---", bg="lightgrey", fg="black", pady=10)
+        todo1 = tk.Label(self.tasks_frame, text="--- Add Items Here ---", bg="lightblue", fg="black", pady=10)
         todo1.bind("<Button-3>", self.remove_task)  # Change to right-click for removal
 
         self.tasks.append(todo1)
@@ -56,7 +56,8 @@ class Todo(tk.Tk):
         self.bind_all("<Button-5>", self.mouse_scroll)
         self.tasks_canvas.bind("<Configure>", self.task_width)
 
-        self.colour_schemes = [{"bg": "lightgrey", "fg": "black"}, {"bg": "grey", "fg": "white"}]
+        # Updated color schemes to light blue and orange
+        self.colour_schemes = [{"bg": "lightblue", "fg": "darkorange"}, {"bg": "orange", "fg": "white"}]
 
         # Label with instructions for deleting tasks
         self.delete_instructions = tk.Label(self, text="Right-click a task to delete it", font=("Helvetica", 12))
